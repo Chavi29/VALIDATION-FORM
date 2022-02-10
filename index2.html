@@ -1,0 +1,101 @@
+
+<!DOCTYPE HTML>
+<html lang="zxx">
+
+<head>
+	<title>Form Validation using javascript in Hindi 2022</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<!-- Meta tag Keywords -->
+	<!-- css files -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<!-- Style-CSS -->
+	<link rel="stylesheet" href="css/fontawesome-all.css">
+	<!-- Font-Awesome-Icons-CSS -->
+	<!-- //css files -->
+	<!-- web-fonts -->
+	<link href="//fonts.googleapis.com/css?family=Reem+Kufi&amp;subset=arabic" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+	<!-- //web-fonts -->
+</head>
+
+<body>
+	<!-- title -->
+	<h1>
+		<span>F</span>orm
+		<span>V</span>alidation
+		<span>U</span>sing
+		<span>J</span>avascript</h1>
+	<!-- //title -->
+	<!-- content -->
+	<div class="sub-main-w3">
+		<form>
+			<div class="form-style-agile">
+				<label>
+					Username
+					<i class="fas fa-user"></i>
+				</label>
+				<input placeholder="Username" name="Name" type="text" id="uname">
+				<span id="s1" style="color: red; font-size: 20px;"></span>
+					
+			</div>
+			<div class="form-style-agile">
+				<label>
+					Password
+					<i class="fas fa-unlock-alt"></i>
+				</label>
+				<input placeholder="Password" name="Password" type="password" id="pwd">
+				<span id="s2" style="color: red;"></span>	
+
+			</div>
+						
+	<input type="submit" value="Log In" onclick="return validate()">
+		</form>
+	</div>
+	<!-- //content -->
+
+	<!-- copyright -->
+	<div class="footer">
+		<p>&copy;  CHAVI GUGLANI
+		
+		</p>
+	</div>
+	<!-- //copyright -->
+
+	<script type="text/javascript">
+		function validate(){
+			var uname, pwd, s1, s2,z;
+			uname =document.getElementById("uname");
+			pwd =document.getElementById("pwd");
+
+			s1 =document.getElementById("s1");
+			s2 =document.getElementById("s2");
+		
+		if (uname.value=="") {
+			s1.innerHTML="*Must be fill";
+		}
+		else{
+			s1.innerHTML="";
+		}
+		if (pwd.value=="") {
+			s2.innerHTML="*Must be fill";
+		}
+
+		else{
+			s2.innerHTML="";
+		}
+		if ((uname.value=="") || (pwd.value=="")) {
+			z=false;
+		}
+		else{
+			z=true;
+		}
+		return z;
+		}
+	</script>
+
+
+</body>
+
+</html>
